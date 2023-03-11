@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "title": "Prize Pool",
+        "price":"$1000",
+        "entry":"$10",
+        "spots":"8 spots left",
+        "total_spots":"100 spots",
+        "type":"Single",
+        "cup":"50%",
+        "RS":"20",
+        "entry_type" :"Guaranteed"
+
+    },
+    {
+        "id":2,
+        "title": "Prize Pool" ,
+        "price":"$66",
+        "entry":"$19",
+        "spots":"3 spots left",
+        "total_spots":"4 spots",
+        "type":"Single",
+        "cup":"25%",
+        "RS":"66",
+        "entry_type" :""
+    },
+    {
+        "id":3,
+        "title": "Max Prize Pool" ,
+        "price":"$49",
+        "entry":"$17",
+        "spots":"2 spots left",
+        "total_spots":"3 spots",
+        "type":"Single",
+        "cup":"33%",
+        "RS":"49",
+        "entry_type" :"Flexible"
+
+    }
+]
