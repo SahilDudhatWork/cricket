@@ -36,7 +36,7 @@ app.get("/upcoming-matches", (req, res) => {
             logo:'https://d13ir53smqqeyp.cloudfront.net/flags/cr-flags/DEF-CR6@2x.png'
         },
         time:'Today 11:00 pm',
-        price:'$18 Lakhs',
+        price:'18 Lakhs',
         type:'MEGA' 
     },
     {
@@ -52,7 +52,7 @@ app.get("/upcoming-matches", (req, res) => {
             logo:'https://d13ir53smqqeyp.cloudfront.net/flags/cr-flags/FC-KARW@2x.png'
         },
         time:'Tomorrow 11:15 pm',
-        price:'$25 Lakhs',
+        price:'25 Lakhs',
         type:'MEGA' 
     },
     {
@@ -68,7 +68,8 @@ app.get("/upcoming-matches", (req, res) => {
             logo:'https://dnd3y8e5nonx2.cloudfront.net/organisations/avatars/1196/1532731163/display.png'
         },
         time:'12/3/2023 11:15 pm',
-        price:'$35 Lakhs', 
+        price:'35 Lakhs', 
+        type:'MEGA' 
     }]
   res.json(data);
 });
@@ -77,7 +78,7 @@ app.get("/free-entry", (req, res) => {
 });
 app.get("/free-entry/:id", async (req, res) => {
   let data = freeEntry.filter(x=>x.id == req.params.id)
-  data['winnings']=[{rank:"1-50",winnings:"$20"},{rank:"50-100",winnings:"$40"},{rank:"100-150",winnings:"$60"},{rank:"15-200",winnings:"$80"}]
+  data['winnings']=[{rank:"1-50",winnings:"20"},{rank:"50-100",winnings:"40"},{rank:"100-150",winnings:"60"},{rank:"15-200",winnings:"80"}]
   await res.json({entry:data,winnings:data.winnings});
 });
 
@@ -90,7 +91,7 @@ var options = {
   // cert: fs.readFileSync('./fullchain.pem')
 };
 // app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}.`);
+//   console.log(`Server is running on port {PORT}.`);
 // });
 // Create an HTTP service.
 http.createServer(app).listen(3000, () => {
